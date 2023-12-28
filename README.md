@@ -13,6 +13,14 @@ Testing embers new gts components with glint, css modules, and embroider. With g
 
 Everything is code-completing and type-safe in this demo which is neat to have.
 
+## css types
+
+to generate css type files:
+
+```
+pnpm lint
+```
+
 ## Note
 
 - using alpha version of elsint-plugin-ember for gts/gjs support
