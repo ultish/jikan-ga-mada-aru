@@ -1,4 +1,5 @@
 import './assets/app.css';
+import '@glint/environment-ember-loose';
 
 import Application from '@ember/application';
 import loadInitializers from 'ember-load-initializers';

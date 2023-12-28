@@ -38,6 +38,10 @@
     "@embroider/webpack": "^3.2.1",
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
+    "@glint/core": "^1.2.1",
+    "@glint/environment-ember-loose": "^1.2.1",
+    "@glint/environment-ember-template-imports": "^1.2.1",
+    "@glint/template": "^1.2.1",
     "@tsconfig/ember": "^3.0.3",
     "@types/ember": "^4.0.10",
     "@types/ember-data": "^4.4.15",
@@ -119,5 +123,8 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "pnpm": {
+    "packageExtensions": {}
   }
 }

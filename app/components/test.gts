@@ -4,7 +4,15 @@ import { local } from 'embroider-css-modules';
 
 import styles from './test.css';
 
-export default class Avatar extends Component {
+export interface TestSignature {
+  Args: {
+    title?: string;
+  };
+  // Blocks: {
+  //   default: [];
+  // };
+}
+export default class Test extends Component<TestSignature> {
   @action
   world() {}
 
@@ -13,6 +21,7 @@ export default class Avatar extends Component {
   }
 
   get test() {
+    console.log(styles);
     return 'hi';
   }
 
@@ -26,4 +35,10 @@ export default class Avatar extends Component {
       {{this.test}}
     </div>
   </template>
+}
+
+declare module '@glint/environment-ember-loose/registry' {
+  export default interface Registry {
+    Test: typeof Test;
+  }
 }
