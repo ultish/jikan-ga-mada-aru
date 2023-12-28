@@ -1,0 +1,9 @@
+{
+  "eslint.validate": [
+    "glimmer-ts",
+    "glimmer-js"
+  ],
+  "prettier.documentSelectors": ["**/*.gjs", "**/*.gts"],
+}
+
+

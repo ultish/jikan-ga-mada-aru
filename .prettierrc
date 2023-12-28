@@ -1,0 +1,19 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "plugins": ["prettier-plugin-ember-template-tag"],
+  "overrides": [
+    {
+      "files": "*.{js,ts,gjs,gts}",
+      "options": {
+        "singleQuote": true
+      }
+    },
+    {
+      "files": "*.css.d.ts",
+      "options": {
+        "quoteProps": "preserve"
+      }
+    }
+  ]
+}
