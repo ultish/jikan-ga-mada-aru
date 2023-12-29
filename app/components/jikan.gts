@@ -6,9 +6,7 @@ export default class Jikan extends Component<JikanSignature> {
     return 'nai';
   }
 
-  <template>
-    時間がある？　{{this.aru}}
-  </template>
+  <template>jikanaru? {{this.aru}}</template>
 }
 
 declare module '@glint/environment-ember-loose/registry' {

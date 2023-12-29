@@ -43,6 +43,7 @@
     "@glint/environment-ember-loose": "^1.2.1",
     "@glint/environment-ember-template-imports": "^1.2.1",
     "@glint/template": "^1.2.1",
+    "@html-next/vertical-collection": "^4.0.2",
     "@tsconfig/ember": "^3.0.3",
     "@types/ember": "^4.0.10",
     "@types/ember-data": "^4.4.15",
