@@ -24,7 +24,7 @@ module.exports = function (defaults) {
       staticModifiers: true,
       staticComponents: true,
       staticEmberSource: true,
-      splitAtRoutes: ['application', 'hello'], // can also be a RegExp
+      splitAtRoutes: ['hello', 'world'], // can also be a RegExp
       cssLoaderOptions: {
         modules: {
           localIdentName: isProduction()
