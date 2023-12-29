@@ -20,6 +20,9 @@ export default class Test extends Component<TestSignature> {
     return this.args.title ?? 'No avatar title provided';
   }
 
+  /**
+   * returns a test string
+   */
   get test() {
     console.log(styles);
     return 'hi';

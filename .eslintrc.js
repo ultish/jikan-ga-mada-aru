@@ -1,26 +1,5 @@
 module.exports = {
   overrides: [
-    // Node files
-    {
-      files: [
-        './postcss.config.js',
-        '.eslintrc.js',
-        '.stylelintrc.js',
-        '.template-lintrc.js',
-        './config/environment.js',
-        './config/targets.js',
-        './ember-cli-build.js',
-        'testem.js',
-        // ...
-      ],
-      extends: ['plugin:node/recommended'],
-    },
-    {
-      files: ['**/*.d.ts'],
-      parser: '@typescript-eslint/parser',
-      plugins: ['@typescript-eslint'],
-      extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
-    },
     {
       files: ['**/*.{js,ts}'],
       plugins: ['ember'],
