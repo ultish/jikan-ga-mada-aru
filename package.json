@@ -12,6 +12,7 @@
   },
   "scripts": {
     "build": "ember build --environment=production",
+    "lintnpx": "npx type-css-modules --src app",
     "lint": "concurrently \"npm:lint:*(!fix)\" --names \"lint:\"",
     "lint:types": "tsc --noEmit",
     "prelint:types": "type-css-modules --src app",

@@ -17,8 +17,14 @@ Everything is code-completing and type-safe in this demo which is neat to have.
 
 to generate css type files:
 
-```
+```bash
 pnpm lint
+```
+
+or use npx:
+
+```bash
+npx type-css-modules --src app
 ```
 
 ## Note
