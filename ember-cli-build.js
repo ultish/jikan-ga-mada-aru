@@ -40,6 +40,7 @@ module.exports = function (defaults) {
       },
       publicAssetURL: '/',
       webpackConfig: {
+        devtool: 'source-map',
         plugins: [new BundleAnalyzerPlugin()],
         module: {
           rules: [
