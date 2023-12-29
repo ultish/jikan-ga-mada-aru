@@ -10,11 +10,6 @@ export default class List extends Component<ListSignature> {
 
   data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-  constructor(owner: unknown, args: ListSignature) {
-    super(owner, args);
-    console.log(this.styles);
-  }
-
   <template>
     <div class='{{this.styles.vc}}'>
       <VerticalCollection
