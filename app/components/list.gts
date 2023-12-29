@@ -1,4 +1,5 @@
 import Component from '@glimmer/component';
+// TODO not sure how to fix this TS error yet, is it because there's no typing for v-c?
 //@ts-expect-error
 import VerticalCollection from '@html-next/vertical-collection/components/vertical-collection/component';
 
