@@ -17,14 +17,14 @@ module.exports = function (defaults) {
   });
 
   const options = {
+    staticAddonTestSupportTrees: true,
+    staticAddonTrees: true,
+    staticHelpers: true,
+    staticModifiers: true,
+    staticComponents: true,
+    staticEmberSource: true,
+    splitAtRoutes: ['hello', 'world'], // can also be a RegExp
     packagerOptions: {
-      staticAddonTestSupportTrees: true,
-      staticAddonTrees: true,
-      staticHelpers: true,
-      staticModifiers: true,
-      staticComponents: true,
-      staticEmberSource: true,
-      splitAtRoutes: ['hello', 'world'], // can also be a RegExp
       cssLoaderOptions: {
         modules: {
           localIdentName: isProduction()
