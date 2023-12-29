@@ -2,6 +2,7 @@
 
 const { Webpack } = require('@embroider/webpack');
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 function isProduction() {
   return EmberApp.env() === 'production';
@@ -17,6 +18,13 @@ module.exports = function (defaults) {
 
   const options = {
     packagerOptions: {
+      staticAddonTestSupportTrees: true,
+      staticAddonTrees: true,
+      staticHelpers: true,
+      staticModifiers: true,
+      staticComponents: true,
+      staticEmberSource: true,
+      splitAtRoutes: ['application', 'hello'], // can also be a RegExp
       cssLoaderOptions: {
         modules: {
           localIdentName: isProduction()
@@ -32,6 +40,7 @@ module.exports = function (defaults) {
       },
       publicAssetURL: '/',
       webpackConfig: {
+        plugins: [new BundleAnalyzerPlugin()],
         module: {
           rules: [
             {
