@@ -13,7 +13,13 @@ module.exports = {
         'testem.js',
         // ...
       ],
-      extends: ['plugin:n/recommended'],
+      extends: ['plugin:node/recommended'],
+    },
+    {
+      files: ['**/*.d.ts'],
+      parser: '@typescript-eslint/parser',
+      plugins: ['@typescript-eslint'],
+      extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
     },
     {
       files: ['**/*.{js,ts}'],
