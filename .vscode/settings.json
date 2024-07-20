@@ -1,9 +1,23 @@
 {
-  "eslint.validate": [
-    "glimmer-ts",
-    "glimmer-js"
-  ],
-  "prettier.documentSelectors": ["**/*.gjs", "**/*.gts"],
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[glimmer-js]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.foldingStrategy": "indentation"
+    },
+    "[glimmer-ts]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.foldingStrategy": "indentation"
+    },
+    "eslint.validate": [
+        "glimmer-ts",
+        "glimmer-js"
+    ],
+    "prettier.documentSelectors": [
+        "**/*.gts",
+        "**/*.gjs"
+    ]
 }
-
-
